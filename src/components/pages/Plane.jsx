@@ -9,7 +9,7 @@ const Plane = () => {
           <div className="card bg-gray-200/20 text-center p-6 m-4  mx-auto rounded-2xl text-white/80 ">
             <div>
               <h1 className="font-semibold capitalize text-2xl mb-16 mt-8">
-                Login
+                Book your seats
               </h1>
             </div>
             <form>
@@ -36,16 +36,8 @@ const Plane = () => {
               className="btn bg-blue-800 w-[80%] p-2  rounded-xl"
               href="#"
             >
-              Login
+              Submit
             </button>
-            <div>
-              <p className=" mt-6 mb-8">
-                Already have an account ?
-                <Link href="" to="/admin" className="hover:text-blue-400 ml-1">
-                  Register
-                </Link>
-              </p>
-            </div>
           </div>
         </article>
       </div>
