@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const Plane = () => {
   return (
-    <section className="min-h-[100dvh] w-[70%] mx-auto md:h-fit text-white">
+    <section className="min-h-[100dvh] w-[70%] md:w[50%] lg:w-[40%] mx-auto md:h-fit text-white">
       <div>
         <h1>Book flights</h1>
         <article>
