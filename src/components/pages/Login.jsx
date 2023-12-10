@@ -14,7 +14,7 @@ const Login = () => {
         </h1>
 
         <div className="border-2 rounded-2xl border-red-300  w-[7%] md:w-[4%] mx-auto mt-2"></div>
-        <div className="card bg-gray-200/20 text-center p-6 m-4  mx-auto rounded-2xl text-white/80 ">
+        <div className="card bg-gray-200/10 text-center p-6 m-4  mx-auto rounded-2xl text-white/80 ">
           <div>
             <h1 className="font-semibold capitalize text-2xl mb-16 mt-8">
               Login
