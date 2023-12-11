@@ -79,9 +79,9 @@ const Nav = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 {open === true ? (
-                  <FaTimes className=" text-2xl cursor-pointer text-teal-900 transition-all duration-500 ease-in-out border-none md:hidden  hover:shadow-teal-400" />
+                  <FaTimes className=" text-2xl cursor-pointer text-teal-900 transition-all duration-500 ease-in-out border-none md:hidden hover:shadow-teal-400 active:text-green-950" />
                 ) : (
-                  <TiThMenu className=" text-2xl text-teal-900 border-none cursor-pointer md:hidden hover:shadow-teal-200 hover:shadow-2xl" />
+                  <TiThMenu className=" text-2xl text-teal-900 border-none cursor-pointer md:hidden hover:shadow-teal-200 hover:shadow-2xl active:text-green-950" />
                 )}
               </motion.button>
             </div>

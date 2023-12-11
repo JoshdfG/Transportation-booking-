@@ -99,6 +99,7 @@ body {
 }
 .check-box:hover #not-completed-icon circle {
   stroke-dasharray: 0 0;
+  transition: all 100ms ease-in-out;
 }
 .hidden {
   display: none;
