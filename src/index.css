@@ -44,14 +44,12 @@
 }
 * {
   scroll-behavior: smooth;
-  /* transition: var(--transition); */
 }
 
 body {
   background-color: #08232a;
   background-image: url(./assets/img/Hero-bg.png);
   font-family: poppins;
-  /* transition: var(--transition); */
 }
 .card:hover {
   box-shadow: 0 0 20px rgba(116, 60, 190, 0.486);
@@ -64,13 +62,10 @@ body {
   /* box-shadow: 0 0 20px rgba(0, 128, 255, 0.9);  */
   box-shadow: 0 0 20px rgba(6, 93, 78, 0.9);
 }
-/* .cn-element {
-  margin: auto;
-} */
+
 .check-box {
   margin-right: 4px;
   background: transparent;
-  /* padding: 2px; */
   display: flex;
   border: none;
   align-items: center;
