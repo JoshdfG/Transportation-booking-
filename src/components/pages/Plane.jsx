@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 const Plane = () => {
   const [isChecked1, setIsChecked1] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
@@ -26,19 +28,29 @@ const Plane = () => {
       }, 200);
     }
   };
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+  };
+  const [selectedDate1, setSelectedDate1] = useState(null);
+
+  const handleDateChange1 = (date) => {
+    setSelectedDate1(date);
+  };
   return (
-    <section className="min-h-[100dvh] w-[70%] md:w[50%] lg:w-[40%] mx-auto md:h-fit text-white">
+    <section className="min-h-[100dvh] cn-element w-[80%] md:w[50%] lg:w-[40%] mx-auto md:h-fit text-white">
       <div>
         <h1>Book flights</h1>
         <article>
-          <div className="card bg-gray-200/10 text-center p-6 m-4  mx-auto rounded-2xl text-white/80 ">
+          <div className="card  bg-gray-200/10 text-center p-6 m-4  mx-auto rounded-2xl text-white/80 ">
             <div>
               <h1 className="font-semibold capitalize text-2xl mb-16 mt-8">
                 Reserve your flights & Boarding Today
               </h1>
             </div>
             <form>
-              <div className="my-8 space-x-3 ">
+              <div className="my-8 space-x-6 ">
                 <div className="links-container flex align-middle justify-center">
                   <label htmlFor="check1" className="check-box">
                     <input
@@ -175,12 +187,13 @@ const Plane = () => {
                   <span className="mr-2">One Way</span>
                 </div>
               </div>
+
               <label htmlFor="" className="">
                 <input
                   type="text"
                   required
                   placeholder="Take off location"
-                  className="textarea w-[80%] p-2 rounded-lg bg-slate-500 mb-10 outline-none text-white"
+                  className="textarea w-[40%] p-2 mr-2 rounded-lg bg-slate-500 mb-10 outline-none text-white"
                 />
               </label>
               <label htmlFor="">
@@ -188,9 +201,55 @@ const Plane = () => {
                   type="text"
                   placeholder="Destination"
                   required
-                  className="textarea w-[80%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                  className="textarea w-[40%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
                 />
-              </label>{" "}
+              </label>
+              <div>
+                <div className="flex w-[100%] justify-center align-middle">
+                  <label htmlFor="" className="">
+                    <input
+                      type="text"
+                      required
+                      placeholder="First Name"
+                      className="textarea w-[80%] p-2  rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                    />
+                  </label>
+
+                  <label htmlFor="">
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      required
+                      className="textarea w-[80%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                    />
+                  </label>
+                </div>
+                <div className="flex w-[100%] justify-center align-middle">
+                  <label htmlFor="">
+                    {" "}
+                    <div className="mb-3">
+                      <p>Pick up date</p>
+                    </div>
+                    <DatePicker
+                      selected={selectedDate}
+                      onChange={handleDateChange}
+                      placeholderText="Select a date"
+                      className=".react-datepicker__month-container textarea  p-2 rounded-lg bg-slate-500 mb-8 outline-none w-[80%] text-white"
+                    />
+                  </label>
+                  <label htmlFor="">
+                    <div className="mb-3">
+                      <p>Return date</p>
+                    </div>
+                    <DatePicker
+                      selected={selectedDate1}
+                      onChange={handleDateChange1}
+                      placeholderText="Select a date"
+                      className=".react-datepicker__month-container textarea  p-2 rounded-lg bg-slate-500 mb-8 outline-none w-[80%] text-white"
+                    />
+                  </label>
+                </div>
+              </div>
             </form>
             <div className="flex justify-between mx-auto w-[80%]"></div>
             <button

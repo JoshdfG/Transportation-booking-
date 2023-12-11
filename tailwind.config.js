@@ -22,6 +22,9 @@ module.exports = {
         primary: "#08232a",
         accent: "#B809C3",
       },
+      container: {
+        center: true,
+      },
       backgroundImage: {
         site: "url('./src/img/her.jpg')",
         about: "url('./src/img/Hero-img.jpg')",

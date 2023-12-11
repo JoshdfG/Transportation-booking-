@@ -64,6 +64,9 @@ body {
   /* box-shadow: 0 0 20px rgba(0, 128, 255, 0.9);  */
   box-shadow: 0 0 20px rgba(6, 93, 78, 0.9);
 }
+/* .cn-element {
+  margin: auto;
+} */
 .check-box {
   margin-right: 4px;
   background: transparent;
@@ -118,4 +121,8 @@ body {
 
 .background {
   background-image: url(./assets/img/hero-bg.png);
+}
+.react-datepicker__month-container {
+  font-family: poppins;
+  padding: 2px;
 }
