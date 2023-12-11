@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const containerVariants = {
   hidden: {
-    opacity: 0,
+    opacity: 0.5,
     x: "10vw",
   },
   visible: {
@@ -15,13 +15,13 @@ const containerVariants = {
     x: 0,
     transition: {
       type: "spring",
-      // delay: 0.5,
+      delay: 0.5,
     },
   },
 };
 const containerVaris = {
   hidden: {
-    opacity: 0,
+    opacity: 0.5,
     x: "-10vw",
   },
   visible: {
