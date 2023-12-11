@@ -108,13 +108,6 @@ body {
   transition: var(--transition);
   box-shadow: 0 0 20px rgb(6, 93, 79);
 }
-/* .text-area {
-  animation-duration: 2s;
-  animation-name: slideleft;
-} */
-/* .textarea::-webkit-input-placeholder {
-  font-size: 0.7rem;
-} */
 .btn:hover {
   box-shadow: 0 0 20px rgba(0, 128, 255, 0.9);
   transition: var(--transition);
