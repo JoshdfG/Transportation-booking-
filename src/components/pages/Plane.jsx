@@ -97,7 +97,7 @@ const Plane = () => {
                   type="text"
                   required
                   placeholder="Take off location"
-                  className="textarea w-[90%] p-2 rounded-lg bg-slate-500 mb-10 outline-none text-white"
+                  className="textarea w-[80%] md:w-[90%] p-2 rounded-lg bg-slate-500 mb-10 outline-none text-white"
                 />
               </label>
               <label htmlFor="">
@@ -105,7 +105,7 @@ const Plane = () => {
                   type="text"
                   placeholder="Destination"
                   required
-                  className="textarea w-[90%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                  className="textarea w-[80%] md:w-[90%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
                 />
               </label>
               <div>
@@ -115,7 +115,7 @@ const Plane = () => {
                       type="text"
                       required
                       placeholder="First Name"
-                      className=" w-[90%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                      className=" w-[80%] md:w-[90%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
                     />
                   </label>
 
@@ -124,11 +124,11 @@ const Plane = () => {
                       type="text"
                       placeholder="Last Name"
                       required
-                      className=" w-[90%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                      className=" w-[80%] md:w-[90%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
                     />
                   </label>
                 </div>
-                <div className=" flex mx-auto align-middle justify-center">
+                <div className=" md:flex mx-auto align-middle justify-center">
                   <label htmlFor="">
                     {" "}
                     <div className="mb-3">

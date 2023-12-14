@@ -1,7 +1,6 @@
 import React from "react";
 import { links } from "./data";
 import { Link } from "react-router-dom";
-// import Admin from "./pages/Admin";
 import { FaTimes } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import { useState, useRef, useEffect } from "react";
