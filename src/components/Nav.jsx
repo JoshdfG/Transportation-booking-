@@ -59,18 +59,18 @@ const Nav = () => {
                 </motion.button>
               </Link>
             </ul>
-            <div className="flex">
+            <div className="flex justify-center align-middle">
               <div>
                 <Link to="/login">
                   <motion.button
-                    className="bg-teal-900 px-3 py-1 rounded-lg text-white mr-2 hover:bg-teal-600  md:hidden tracking-wider logo active:outline-none active:bg-green-950"
+                    className="bg-teal-900 px-3 py-1 rounded-lg text-white mr-2  hover:bg-teal-600  md:hidden tracking-wider logo active:outline-none active:bg-green-950"
                     whileHover={{ scale: 1.05, originX: 0 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
                     Login
                   </motion.button>
                 </Link>
-              </div>{" "}
+              </div>
               <motion.button
                 className="border-none"
                 type=""
