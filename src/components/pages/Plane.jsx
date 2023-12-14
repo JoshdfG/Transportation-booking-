@@ -153,7 +153,6 @@ const Plane = () => {
                     />
                   </label>
                 </div>
-                <div></div>
               </div>
             </form>
             <div className="flex justify-between mx-auto w-[80%]"></div>

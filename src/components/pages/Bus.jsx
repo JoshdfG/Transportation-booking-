@@ -91,64 +91,67 @@ const Bus = () => {
                   <span className="mr-2">One Way</span>
                 </div>
               </div>
-              <label htmlFor="" className="">
-                <input
-                  type="text"
-                  required
-                  placeholder="Take off location"
-                  className="textarea w-[80%] p-2 rounded-lg bg-slate-500 mb-10 outline-none text-white"
-                />
-              </label>
-              <label htmlFor="">
-                <input
-                  type="text"
-                  placeholder="Destination"
-                  required
-                  className="textarea w-[80%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
-                />
-              </label>
-              <div className="flex w-[100%] justify-center align-middle">
+              <div>
                 <label htmlFor="" className="">
                   <input
                     type="text"
                     required
-                    placeholder="First Name"
-                    className="textarea w-[77%] p-2  rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                    placeholder="Take off location"
+                    className="textarea w-[90%] p-2 rounded-lg bg-slate-500 mb-10 outline-none text-white"
                   />
                 </label>
-
                 <label htmlFor="">
                   <input
                     type="text"
-                    placeholder="Last Name"
+                    placeholder="Destination"
                     required
-                    className="textarea w-[77%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                    className="textarea w-[90%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
                   />
                 </label>
-              </div>
-              <div className="flex w-[100%] justify-center align-middle">
-                <label htmlFor="">
-                  <div className="mb-3">
-                    <p>Pick up date</p>
-                  </div>
-                  <DatePicker
-                    selected={selectedDate}
-                    onChange={handleDateChange}
-                    placeholderText="Select a date"
-                    className=".react-datepicker__month-container textarea  p-2 rounded-lg bg-slate-500 mb-8 outline-none w-[77%] text-white"
-                  />
-                </label>
-                <label htmlFor="">
-                  <div className="mb-3">
-                    <p>Return date</p>
-                  </div>
-                  <DatePicker
-                    selected={selectedDate1}
-                    onChange={handleDateChange1}
-                    placeholderText="Select a date"
-                    className=".react-datepicker__month-container textarea  p-2 rounded-lg bg-slate-500 mb-8 outline-none w-[77%] text-white"
-                  />
-                </label>
+                <div className="">
+                  <label htmlFor="" className="">
+                    <input
+                      type="text"
+                      required
+                      placeholder="First Name"
+                      className=" w-[90%] md:w-[90%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                    />
+                  </label>
+
+                  <label htmlFor="">
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      required
+                      className=" w-[90%] md:w-[90%] p-2 rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                    />
+                  </label>
+                </div>
+                <div className=" md:flex mx-auto align-middle justify-center">
+                  <label htmlFor="">
+                    {" "}
+                    <div className="mb-3">
+                      <p>Pick up date</p>
+                    </div>
+                    <DatePicker
+                      selected={selectedDate}
+                      onChange={handleDateChange}
+                      placeholderText="Select a date"
+                      className=".react-datepicker__month-container textarea  p-2 mr-2 w-[75%] rounded-lg bg-slate-500 mb-8 outline-none text-white"
+                    />
+                  </label>
+                  <label htmlFor="">
+                    <div className="mb-3">
+                      <p>Return date</p>
+                    </div>
+                    <DatePicker
+                      selected={selectedDate1}
+                      onChange={handleDateChange1}
+                      placeholderText="Select a date"
+                      className=".react-datepicker__month-container textarea p-2 rounded-lg w-[75%] bg-slate-500 mb-8 outline-none text-white"
+                    />
+                  </label>
+                </div>
               </div>
             </form>
             <div className="flex justify-between mx-auto w-[80%]"></div>
