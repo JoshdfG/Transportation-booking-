@@ -4,6 +4,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import NotCompleted from "./NotCompleted";
 import Loading from "./Loading";
 import Completed from "./Completed";
+import imag from "/Users/hp/Transport/src/assets/img/bus.jpg";
+
 const Bus = () => {
   const [isChecked1, setIsChecked1] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
@@ -43,7 +45,15 @@ const Bus = () => {
   return (
     <section className="min-h-[100dvh] w-[80%] md:w[50%] lg:w-[40%] mx-auto md:h-fit text-white">
       <div>
-        <h1>Bus seats</h1>
+        <div>
+          <div className="text-center">
+            <h1 className="text-3xl mt-4 mb-4 ">Bus seats</h1>
+            <div>
+              <img src={imag} alt="bus img" className="rounded-lg" />
+            </div>
+          </div>
+        </div>
+
         <article>
           <div className="card bg-gray-200/10 text-center p-6 m-4  mx-auto rounded-2xl text-white/80 ">
             <div>
